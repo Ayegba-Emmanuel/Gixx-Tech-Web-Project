@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="css/health.css">
+    <title>Gixx_Technology</title>
+</head>
+<body>
+    <!-- LINK TO NAVBAR SECTION BELOW (THE ID HEADER)-->
+    <!-- <div id="header"></div> -->
+
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar">
+      <h1 class="logo">
+          <img src="Images/Gixx_tech_loo_1.png" alt="">
+      </h1>
+      <ul class="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li>
+              <a href="#"  class="active">Industries &#9662;</a>
+              <ul class="sub-navbar">
+                  <li class="sub-navbar-1"><a href="banking.html">Banking</a></li>
+                  <li class="sub-navbar-1"><a href="education.html">Education</a></li>
+                  <li class="sub-navbar-1"><a href="health.html">Health</a></li>
+                  <li class="sub-navbar-1"><a href="legal.html">Legal Services</a></li>
+                  <!-- <li class="sub-navbar-1"><a href="#">NGO</a></li> -->
+                  <li class="sub-navbar-1"><a href="real-estate.html">Real Estate</a></li>
+                  <!-- <li class="sub-navbar-1"><a href="#">Religious Bodies</a></li> -->
+                  <li class="sub-navbar-1"><a href="aviation.html">Transport & Logistic</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#">Services &#9662;</a>
+              <ul class="sub-navbar">
+                  <li class="sub-navbar-1"><a href="content-managemnt.html">Content Management</a></li>
+                  <!-- <li class="sub-navbar-1"><a href="#">Data Analysis</a></li> -->
+                  <li class="sub-navbar-1"><a href="ecommerce.html">E-commerce Payment</a></li>
+                  <!-- <li class="sub-navbar-1"><a href="#">Infrastructure</a></li>
+                  <li class="sub-navbar-1"><a href="#">Internet Services</a></li> -->
+                  <li class="sub-navbar-1"><a href="IT-consulting.html">IT Consulting</a></li>
+                  <li class="sub-navbar-1"><a href="product-design.html">Product Design</a></li>
+                  <li class="sub-navbar-1"><a href="software-engineering.html">Software Engineering</a></li>
+              </ul>
+              
+          </li>
+          <!-- <li>
+              <a href="#products">Products &#9662;</a>
+              <ul class="sub-navbar">
+                  <li class="sub-navbar-1"><a href="#">For Business</a></li>
+                  <li class="sub-navbar-1"><a href="#">For School</a></li>
+              </ul>
+          </li> -->
+          <li>
+              <a href="#resources">Resources &#9662;</a>
+              <ul class="sub-navbar">
+                  <li class="sub-navbar-1"><a href="#">Blog</a></li>
+                  <li class="sub-navbar-1"><a href="#">Career</a></li>
+              </ul>
+          </li>
+          <div class="">
+              <li><a href="#contact" id="btn">Contact Us</a></li>
+          </div>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="health">
+        <div class="image">
+          <img class="image" src="Images/estate.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <i id="hosp" class="fas fa-home"></i>
+          <h2>Real Estate Customer Relationship Management Software</h2>
+          <p class="pee">CRM software enables realtors to efficiently carry out their duties and run their businesses. You may schedule tasks, manage contacts, keep an eye on the pipeline, and organize data. If real estate makes an investment in a CRM system, they can close deals more quickly and expand their business.</p>
+          <h4><span style="background-color: #F9A788; padding: 10px;">Real Estate CRM Software</span></h4>
+          <p class="heal">An efficient interaction between buyers, sellers, developers, banks, third-party agents, and brokers can be managed and coordinated with the use of CRM. In your CRM system, you may control every aspect of your business. For example, you may create quotes depending on the requests, manage the information about your home, and attend to the wants and needs of the real estate agents. The end-to-end process can be streamlined and managed successfully for excellent results with the aid of real estate CRM software.</p>
+          <a id="btn" style="display: block; margin: 0 auto; text-align: center; height: 50px; line-height: 30px;" href=""><i class="fas fa-newspaper" style="padding-right: 10px;"></i>REQUEST A QUOTE</a>
+        </div>
+
+      </div>
+    </div>
+    <!-- FOOTER LINK -->
+    <div id="footer"></div>
+
+
+    <!--EXTERNAL JS AND FONT AWESOME LINKS BELOW -->
+    <!-- <script src="index.js"></script> -->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" integrity="sha384-9eN2fNnHPoZmhNKTZIz7SZyv+8W0Aw0pDAKdKEd5XuiX5Pp+5VXJi1Ck7IrTvM1k" crossorigin="anonymous"></script>
+     <!-- SCIPT CONTAINING JS ADDING HEADER AND FOOTER -->
+     <script>
+        fetch('header.html')
+          .then(response => response.text())
+          .then(data => document.getElementById('header').innerHTML = data);
+          
+        fetch('footer.html')
+          .then(response => response.text())
+          .then(data => document.getElementById('footer').innerHTML = data);
+      </script>
+</body>
+</html>
+
+
+

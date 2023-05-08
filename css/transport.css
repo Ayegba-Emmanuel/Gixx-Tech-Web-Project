@@ -1,0 +1,152 @@
+:root{
+  --background-color: #FFFFFF;
+  --primary-color: #FBC5B0;
+  --secondary-color: #CB430F;
+  --tertiary-color: rgba(255, 255, 255, 0.4);
+  --button-color: #F45012;
+
+  --RC-NO:#8A3AC8;
+
+  --white: #fff;
+  --black: #000;
+  --black-2: #3a3a3a;
+  --gray-color:#d9d9d9;
+
+  --key-1: 1.5rem;
+  --key-2: 2rem;
+  --key-3: 3rem;
+}
+
+*,
+*::before,
+*::after{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+
+body {text-transform: none;}
+
+a{text-decoration: none;}
+
+/* UTILITY */
+.container{
+  max-width: 1200px;
+  padding: 40px 40px;
+  margin: 30px auto;
+  overflow: hidden;
+}
+
+
+/* THE THREE LINKS AT THE TOP */
+.links-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 50PX;
+  }
+  
+  .line {
+    width: 30px;
+    height: 1px;
+    background-color:var(--black-2);
+    margin: 0 10px;
+  }
+  .transport{
+    color: #000;
+  }
+  .transport i{
+    color: var(--button-color);
+    padding-right: 10px;
+  }
+  /* #plane{
+    background-color: var(--primary-color);
+    padding: 10px;
+  } */
+  /* a {
+    margin: 0 10px;
+  } */
+
+  /* AVIATION OPERATION */
+  .t-container {
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+ .t-container h2{
+  padding-bottom: 10px;
+ }
+ .t-reservation{
+  display: flex;
+  margin-bottom: 0px;
+ }
+ .image{
+  width: 50%;
+  height: 70vh;
+  border-radius: 4PX;
+ }
+ .t-content{
+  /* justify-content: center; */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 0 50px;
+  border-radius: 4PX;
+ }
+ .t-content #aero{
+  font-size: 40px;
+  color: var(--secondary-color);
+  padding: 50px 0;
+  padding-left: 15rem;
+ }
+ .t-content h2{
+  padding-bottom: 20px;
+ }
+ .t-content p{
+  padding-bottom: 20px;
+ }
+
+ /* PROCESSING-PAYMENT */
+ .Processing-payment {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+
+.Processing, .payment {
+  display: flex;
+  flex-basis: calc(50% - 10px);
+  text-align: left;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.Processing i, .payment i {
+  display: inline-block;
+  font-size: 40px;
+  padding-right: 20px;
+  color: var(--secondary-color);
+}
+
+.Processing h2, .payment h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.Processing p, .payment p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+
+
+

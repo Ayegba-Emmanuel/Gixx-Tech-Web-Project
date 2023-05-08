@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="css/services2.css">
+    <title>Gixx_Technology</title>
+
+   
+</head>
+<body>
+    <!-- LINK TO NAVBAR SECTION BELOW (THE ID HEADER)-->
+    <!-- <div id="header"></div> -->
+
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar">
+        <h1 class="logo">
+            <img src="Images/Gixx_tech_loo_1.png" alt="">
+        </h1>
+        <ul class="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li>
+                <a href="#">Industries &#9662;</a>
+                <ul class="sub-navbar">
+                    <li class="sub-navbar-1"><a href="banking.html">Banking</a></li>
+                    <li class="sub-navbar-1"><a href="education.html">Education</a></li>
+                    <li class="sub-navbar-1"><a href="health.html">Health</a></li>
+                    <li class="sub-navbar-1"><a href="legal.html">Legal Services</a></li>
+                    <!-- <li class="sub-navbar-1"><a href="#">NGO</a></li> -->
+                    <li class="sub-navbar-1"><a href="real-estate.html">Real Estate</a></li>
+                    <!-- <li class="sub-navbar-1"><a href="#">Religious Bodies</a></li> -->
+                    <li class="sub-navbar-1"><a href="aviation.html">Transport & Logistic</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"  class="active">Services &#9662;</a>
+                <ul class="sub-navbar">
+                    <li class="sub-navbar-1"><a href="content-managemnt.html">Content Management</a></li>
+                    <!-- <li class="sub-navbar-1"><a href="#">Data Analysis</a></li> -->
+                    <li class="sub-navbar-1"><a href="ecommerce.html">E-commerce Payment</a></li>
+                    <!-- <li class="sub-navbar-1"><a href="#">Infrastructure</a></li>
+                    <li class="sub-navbar-1"><a href="#">Internet Services</a></li> -->
+                    <li class="sub-navbar-1"><a href="IT-consulting.html">IT Consulting</a></li>
+                    <li class="sub-navbar-1"><a href="product-design.html">Product Design</a></li>
+                    <li class="sub-navbar-1"><a href="software-engineering.html">Software Engineering</a></li>
+                </ul>
+                
+            </li>
+            <!-- <li>
+                <a href="#products">Products &#9662;</a>
+                <ul class="sub-navbar">
+                    <li class="sub-navbar-1"><a href="#">For Business</a></li>
+                    <li class="sub-navbar-1"><a href="#">For School</a></li>
+                </ul>
+            </li> -->
+            <li>
+                <a href="#resources">Resources &#9662;</a>
+                <ul class="sub-navbar">
+                    <li class="sub-navbar-1"><a href="#">Blog</a></li>
+                    <li class="sub-navbar-1"><a href="#">Career</a></li>
+                </ul>
+            </li>
+            <div class="">
+                <li><a href="#contact" id="btn">Contact Us</a></li>
+            </div>
+        </ul>
+    </nav>
+        
+    <section class="container">
+        <div class="section">
+            <img src="Images/product-design.jpg" alt="">
+         <div class="content">
+             <h3><i class="fab fa-product-hunt"></i></i>Product (UX/UI) Design and Management</h3>
+             <p>In the past, search engine optimization (SEO) could be accomplished by simply stuffing your website with plenty of keywords; as a result, your site would instantly rise to the top of search results. This approach is no longer viable, however, because Google continuously updates its algorithm by looking at dwell time—the time it takes a visitor to access a page—user journey success, web navigation patterns, and website usage. An approach to rely on visitors is to draw them in with good <span style="color: #F45012;">user experience</span>. <br><br>
+                The basic goal of <span style="color: #F45012;">UI/UX </span>is to make complex information simpler. The primary focus should be on user preferences and satisfaction in order to improve product reputation and garner positive user feedback. You'll generate better financial results and business data as a result. Your customers will adore the smart and engaging user experience you develop with our assistance since we have the tools and knowledge to do it.</p>
+             <p class=p-btn><a id="btn" href="" style="display: block; margin: 0 auto; text-align: center; height: 50px; line-height: 30px;">EXPLORE OUR DESIGN SOLUTION TODAY!</a></p>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+
+    <!--EXTERNAL JS AND FONT AWESOME LINKS BELOW -->
+    <!-- <script src="index.js"></script> -->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" integrity="sha384-9eN2fNnHPoZmhNKTZIz7SZyv+8W0Aw0pDAKdKEd5XuiX5Pp+5VXJi1Ck7IrTvM1k" crossorigin="anonymous"></script>
+     <!-- SCIPT CONTAINING JS ADDING HEADER AND FOOTER -->
+     <script>
+        fetch('header.html')
+          .then(response => response.text())
+          .then(data => document.getElementById('header').innerHTML = data);
+          
+        fetch('footer.html')
+          .then(response => response.text())
+          .then(data => document.getElementById('footer').innerHTML = data);
+      </script>
+</body>
+</html>
+
+
+
